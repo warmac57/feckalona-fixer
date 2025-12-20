@@ -35,8 +35,8 @@ const Contact = () => {
                         Office Location
                       </h3>
                       <p className="text-muted-foreground">
-                        104 Main Street<br />
-                        Frytown, IA 52324
+                        1959 Yoder Ave. SW<br />
+                        Kalona, IA 52247
                       </p>
                     </div>
                   </div>
@@ -52,8 +52,8 @@ const Contact = () => {
                         Phone
                       </h3>
                       <p className="text-muted-foreground">
-                        Office: <a href="tel:+13196831234" className="text-primary hover:underline">(319) 683-1234</a><br />
-                        24/7 Outage Line: <a href="tel:+13196831234" className="text-primary hover:underline">(319) 683-1234</a>
+                        Office: <a href="tel:+13196832510" className="text-primary hover:underline">(319) 683-2510</a><br />
+                        24/7 Outage Line: <a href="tel:+13196832510" className="text-primary hover:underline">(319) 683-2510</a>
                       </p>
                     </div>
                   </div>
