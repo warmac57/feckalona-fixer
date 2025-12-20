@@ -86,13 +86,13 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-1 opacity-70 shrink-0" />
                 <span className="text-sm opacity-80">
-                  104 Main St, Frytown, IA 52324
+                  1959 Yoder Ave. SW, Kalona, IA 52247
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 opacity-70" />
-                <a href="tel:+13196831234" className="footer-link text-sm">
-                  (319) 683-1234
+                <a href="tel:+13196832510" className="footer-link text-sm">
+                  (319) 683-2510
                 </a>
               </li>
               <li className="flex items-center gap-2">
