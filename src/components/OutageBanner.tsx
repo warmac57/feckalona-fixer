@@ -15,14 +15,14 @@ export function OutageBanner() {
               to="/safety-outages"
               className="underline underline-offset-2 hover:no-underline font-medium"
             >
-              Iowa Utility Outage Map
+              Iowa REC Outage Map
             </Link>
             <a
-              href="tel:+13196831234"
+              href="tel:+13196832510"
               className="flex items-center gap-1 underline underline-offset-2 hover:no-underline"
             >
               <Phone className="w-4 h-4" />
-              (319) 683-1234
+              (319) 683-2510
             </a>
           </div>
         </div>
