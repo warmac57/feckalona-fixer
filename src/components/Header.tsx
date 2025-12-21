@@ -57,7 +57,7 @@ export function Header() {
               <h1 className="font-display text-lg font-semibold text-foreground leading-tight">
                 Farmers Electric
               </h1>
-              <p className="text-xs text-muted-foreground">Cooperative</p>
+              <p className="text-xs text-muted-foreground">Cooperative - Kalona</p>
             </div>
           </Link>
 
