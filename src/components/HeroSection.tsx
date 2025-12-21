@@ -11,7 +11,7 @@ export function HeroSection() {
       />
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-hero-overlay/85 to-hero-overlay/70" />
+      <div className="absolute inset-0 bg-gradient-to-br from-hero-overlay/60 to-hero-overlay/45" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
