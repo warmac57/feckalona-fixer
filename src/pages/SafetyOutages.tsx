@@ -62,10 +62,12 @@ const SafetyOutages = () => {
                   Call (319) 683-1234
                 </a>
                 <a
-                  href="#"
+                  href="https://www.iowarec.org/outages"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors"
                 >
-                  Iowa Utility Outage Map
+                  Iowa REC Outage Map
                 </a>
               </div>
             </div>
