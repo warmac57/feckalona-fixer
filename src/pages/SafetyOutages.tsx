@@ -55,11 +55,11 @@ const SafetyOutages = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+13196831234"
+                  href="tel:+13196832510"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  Call (319) 683-1234
+                  Call (319) 683-2510
                 </a>
                 <a
                   href="https://www.iowarec.org/outages"
