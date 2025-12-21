@@ -33,7 +33,6 @@ const navItems: NavItem[] = [
       { label: "Frytown", href: "/frytown" },
     ],
   },
-  { label: "FEC Blog", href: "/blog" },
 ];
 
 export function Header() {

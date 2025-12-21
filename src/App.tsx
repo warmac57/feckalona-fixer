@@ -17,7 +17,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import History from "./pages/History";
 import Frytown from "./pages/Frytown";
-import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -43,7 +42,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/history" element={<History />} />
           <Route path="/frytown" element={<Frytown />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog" element={<News />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
