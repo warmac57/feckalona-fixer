@@ -20,7 +20,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-sm opacity-80 leading-relaxed">
-              Serving rural eastern Iowa since 1916 with reliable electric service
+              Serving rural Kalona area since 1916 with reliable electric service
               and commitment to renewable energy.
             </p>
           </div>
