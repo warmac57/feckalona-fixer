@@ -16,7 +16,7 @@ export function Footer() {
                 <h3 className="font-display text-lg font-semibold">
                   Farmers Electric
                 </h3>
-                <p className="text-xs opacity-70">Cooperative</p>
+                <p className="text-xs opacity-70">Cooperative - Kalona</p>
               </div>
             </Link>
             <p className="text-sm opacity-80 leading-relaxed">
