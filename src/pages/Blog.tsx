@@ -13,7 +13,7 @@ import overloadedPowerstrip from "@/assets/overloaded-powerstrip.jpg";
 
 const blogPosts = [
   {
-    date: "December 18, 2024",
+    date: "December 18, 2025",
     title: "Portable Electric Heater Safety Tips",
     excerpt:
       "As winter sets in, many of us rely on portable electric heaters for extra warmth. Learn essential safety tips to keep your home cozy and hazard-free this season.",
