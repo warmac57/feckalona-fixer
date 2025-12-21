@@ -12,7 +12,7 @@ import overloadedPowerstrip from "@/assets/overloaded-powerstrip.jpg";
 
 const newsItems = [
   {
-    date: "December 15, 2024",
+    date: "December 15, 2025",
     title: "Holiday Office Hours",
     excerpt:
       "Our office will be closed December 24-25 and January 1 for the holidays. Emergency services remain available 24/7.",
