@@ -50,7 +50,7 @@ const newsItems = [
 
 const blogPosts = [
   {
-    date: "December 21, 2024",
+    date: "December 21, 2025",
     title: "Welcome to Our New Website!",
     excerpt:
       "We're excited to launch our brand new website, designed to better serve our members with easier access to account information, outage updates, energy-saving tips, and more. Explore the new features and let us know what you think!",
