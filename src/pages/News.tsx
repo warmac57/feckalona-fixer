@@ -119,9 +119,6 @@ const News = () => {
         {/* Blog Section */}
         <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
-              FEC Blog
-            </h2>
             <div className="max-w-4xl mx-auto">
               <div className="grid gap-8">
                 {blogPosts.map((post, index) => (
