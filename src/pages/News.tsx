@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Calendar, ArrowRight, AlertTriangle } from "lucide-react";
+import { Calendar, ArrowRight, AlertTriangle, Thermometer } from "lucide-react";
 import { useState } from "react";
 import {
   Dialog,
@@ -8,8 +8,9 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import overloadedPowerstrip from "@/assets/overloaded-powerstrip.jpg";
-
+import winterTipsInfographic from "@/assets/winter-tips-infographic.jpg";
 const blogPosts = [
   {
     date: "December 21, 2025",
@@ -99,6 +100,7 @@ const blogPosts = [
 
 const News = () => {
   const [heaterSafetyOpen, setHeaterSafetyOpen] = useState(false);
+  const [winterTipsOpen, setWinterTipsOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -138,6 +140,14 @@ const News = () => {
                     {post.slug === "heater-safety" && (
                       <button 
                         onClick={() => setHeaterSafetyOpen(true)}
+                        className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all mt-4"
+                      >
+                        Read More <ArrowRight className="w-4 h-4" />
+                      </button>
+                    )}
+                    {post.slug === "winter-energy-tips" && (
+                      <button 
+                        onClick={() => setWinterTipsOpen(true)}
                         className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all mt-4"
                       >
                         Read More <ArrowRight className="w-4 h-4" />
@@ -191,6 +201,27 @@ const News = () => {
               </p>
             </div>
           </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Winter Energy Tips Dialog */}
+      <Dialog open={winterTipsOpen} onOpenChange={setWinterTipsOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh]">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-primary text-xl">
+              <Thermometer className="w-6 h-6" />
+              10 Simple Tips to Keep Your Home Warm
+            </DialogTitle>
+          </DialogHeader>
+          <ScrollArea className="max-h-[70vh]">
+            <div className="pr-4">
+              <img 
+                src={winterTipsInfographic} 
+                alt="10 Simple Tips to Keep Your Home Warm - Infographic with energy saving tips for winter" 
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          </ScrollArea>
         </DialogContent>
       </Dialog>
     </div>
