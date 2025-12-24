@@ -134,17 +134,15 @@ const News = () => {
                     <h3 className="font-display text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                       {post.title}
                     </h3>
-                    <p className="text-muted-foreground mb-4">{post.excerpt}</p>
-                    <button 
-                      onClick={() => {
-                        if (post.slug === "heater-safety") {
-                          setHeaterSafetyOpen(true);
-                        }
-                      }}
-                      className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all"
-                    >
-                      Read More <ArrowRight className="w-4 h-4" />
-                    </button>
+                    <p className="text-muted-foreground">{post.excerpt}</p>
+                    {post.slug === "heater-safety" && (
+                      <button 
+                        onClick={() => setHeaterSafetyOpen(true)}
+                        className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all mt-4"
+                      >
+                        Read More <ArrowRight className="w-4 h-4" />
+                      </button>
+                    )}
                   </article>
                 ))}
               </div>
