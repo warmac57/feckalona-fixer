@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Calendar, ArrowRight, AlertTriangle, Thermometer } from "lucide-react";
+import { Calendar, ArrowRight, AlertTriangle, Thermometer, Facebook } from "lucide-react";
 import { useState } from "react";
 import {
   Dialog,
@@ -12,6 +12,14 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import overloadedPowerstrip from "@/assets/overloaded-powerstrip.jpg";
 import winterTipsInfographic from "@/assets/winter-tips-infographic.jpg";
 const blogPosts = [
+  {
+    date: "January 14, 2026",
+    title: "Follow Us on Facebook!",
+    excerpt:
+      "Stay connected with Farmers Electric Cooperative! Follow us on Facebook for the latest updates, energy tips, community news, and more.",
+    slug: "follow-facebook",
+    link: "https://www.facebook.com/FarmersElectricCoop.Kalona",
+  },
   {
     date: "December 21, 2025",
     title: "Welcome to Our New Website!",
@@ -152,6 +160,17 @@ const News = () => {
                       >
                         Read More <ArrowRight className="w-4 h-4" />
                       </button>
+                    )}
+                    {post.slug === "follow-facebook" && post.link && (
+                      <a 
+                        href={post.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all mt-4"
+                      >
+                        <Facebook className="w-4 h-4" />
+                        Visit Our Facebook Page <ArrowRight className="w-4 h-4" />
+                      </a>
                     )}
                   </article>
                 ))}
