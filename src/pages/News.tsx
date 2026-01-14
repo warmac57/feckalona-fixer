@@ -91,13 +91,6 @@ const blogPosts = [
     slug: "fall-preparation",
   },
   {
-    date: "September 30, 2024",
-    title: "Annual Meeting Recap",
-    excerpt:
-      "Thank you to all members who attended our annual meeting. Here's a summary of the key updates.",
-    slug: "annual-meeting-recap",
-  },
-  {
     date: "September 28, 2024",
     title: "Understanding Your Electric Bill",
     excerpt:
