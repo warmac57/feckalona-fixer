@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 const timelineEvents = [
   {
     year: "1916",
@@ -57,9 +58,15 @@ const History = () => {
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
               Our History
             </h1>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto">
+            <p className="text-lg opacity-90 max-w-2xl mx-auto mb-6">
               Over 100 years of powering rural Iowa communities.
             </p>
+            <Button asChild variant="secondary" size="lg">
+              <a href="/fec_celebrating_100_years.pdf" download>
+                <Download className="w-5 h-5 mr-2" />
+                Download Our History Book
+              </a>
+            </Button>
           </div>
         </section>
 
