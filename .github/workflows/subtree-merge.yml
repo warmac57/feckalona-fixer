@@ -1,0 +1,33 @@
+name: Subtree Merge feckalona-fixer
+
+on:
+  workflow_dispatch:  # Manual trigger only
+
+jobs:
+  subtree-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout FECKalona repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history needed for subtree
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add feckalona-fixer as subtree
+        run: |
+          # Add the remote
+          git remote add fixer-origin https://github.com/${{ github.repository_owner }}/feckalona-fixer.git
+          
+          # Fetch the repository
+          git fetch fixer-origin
+          
+          # Add as subtree (change 'website' to your preferred folder name)
+          git subtree add --prefix=website fixer-origin main --squash
+          
+      - name: Push changes
+        run: git push origin main
