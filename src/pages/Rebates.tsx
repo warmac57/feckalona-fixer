@@ -86,7 +86,6 @@ const Rebates = () => {
                   "Keep all receipts and proof of purchase",
                   "Complete the rebate application form",
                   "Submit application within 90 days of installation",
-                  "Receive your rebate check within 4-6 weeks",
                 ].map((step, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
