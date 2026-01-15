@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Calendar, ArrowRight, AlertTriangle, Thermometer, Facebook } from "lucide-react";
+import { Calendar, ArrowRight, AlertTriangle, Thermometer, Facebook, Car } from "lucide-react";
 import { useState } from "react";
 import {
   Dialog,
@@ -11,7 +11,16 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import overloadedPowerstrip from "@/assets/overloaded-powerstrip.jpg";
 import winterTipsInfographic from "@/assets/winter-tips-infographic.jpg";
+import winterDrivingImage from "@/assets/winter-driving.jpg";
+
 const blogPosts = [
+  {
+    date: "January 15, 2026",
+    title: "Winter Driving Safety: Stay Safe on Iowa's Roads",
+    excerpt:
+      "With icy roads and winter storms, safe driving is essential. Learn key tips for navigating winter weather and what to do if you encounter a downed power line.",
+    slug: "winter-driving",
+  },
   {
     date: "January 14, 2026",
     title: "Follow Us on Facebook!",
@@ -102,6 +111,7 @@ const blogPosts = [
 const News = () => {
   const [heaterSafetyOpen, setHeaterSafetyOpen] = useState(false);
   const [winterTipsOpen, setWinterTipsOpen] = useState(false);
+  const [winterDrivingOpen, setWinterDrivingOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -138,6 +148,14 @@ const News = () => {
                       {post.title}
                     </h3>
                     <p className="text-muted-foreground">{post.excerpt}</p>
+                    {post.slug === "winter-driving" && (
+                      <button 
+                        onClick={() => setWinterDrivingOpen(true)}
+                        className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all mt-4"
+                      >
+                        Read More <ArrowRight className="w-4 h-4" />
+                      </button>
+                    )}
                     {post.slug === "heater-safety" && (
                       <button 
                         onClick={() => setHeaterSafetyOpen(true)}
@@ -232,6 +250,68 @@ const News = () => {
                 alt="10 Simple Tips to Keep Your Home Warm - Infographic with energy saving tips for winter" 
                 className="w-full h-auto rounded-lg"
               />
+            </div>
+          </ScrollArea>
+        </DialogContent>
+      </Dialog>
+
+      {/* Winter Driving Safety Dialog */}
+      <Dialog open={winterDrivingOpen} onOpenChange={setWinterDrivingOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh]">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-primary text-xl">
+              <Car className="w-6 h-6" />
+              Winter Driving Safety Tips
+            </DialogTitle>
+          </DialogHeader>
+          <ScrollArea className="max-h-[70vh]">
+            <div className="pr-4 space-y-4">
+              <div className="rounded-lg overflow-hidden border">
+                <img 
+                  src={winterDrivingImage} 
+                  alt="Safe winter driving on an Iowa road" 
+                  className="w-full h-auto"
+                />
+              </div>
+              
+              <div className="bg-primary/10 border border-primary/30 rounded-lg p-4">
+                <h4 className="font-semibold text-primary mb-2">Before You Drive:</h4>
+                <ul className="list-disc list-inside space-y-1 text-foreground text-sm">
+                  <li>Clear all snow and ice from windows, mirrors, lights, and roof</li>
+                  <li>Check that your headlights and taillights are working</li>
+                  <li>Keep your gas tank at least half full</li>
+                  <li>Pack an emergency kit: blankets, flashlight, phone charger, snacks</li>
+                </ul>
+              </div>
+
+              <div className="bg-secondary/50 border border-secondary rounded-lg p-4">
+                <h4 className="font-semibold text-foreground mb-2">On the Road:</h4>
+                <ul className="list-disc list-inside space-y-1 text-foreground text-sm">
+                  <li>Reduce speed and increase following distance on icy roads</li>
+                  <li>Brake gently to avoid skidding</li>
+                  <li>Avoid using cruise control on slippery surfaces</li>
+                  <li>Stay in your lane and avoid sudden movements</li>
+                  <li>Use headlights even during the day for visibility</li>
+                </ul>
+              </div>
+
+              <div className="bg-destructive/10 border border-destructive/30 rounded-lg p-4">
+                <h4 className="font-semibold text-destructive mb-2 flex items-center gap-2">
+                  <AlertTriangle className="w-4 h-4" />
+                  If You See a Downed Power Line:
+                </h4>
+                <ul className="list-disc list-inside space-y-1 text-foreground text-sm">
+                  <li><strong>Stay in your vehicle</strong> — it's the safest place</li>
+                  <li>Call 911 and Farmers Electric Cooperative immediately</li>
+                  <li>Assume all downed lines are energized and dangerous</li>
+                  <li>If you must exit (fire), jump clear without touching the car and ground at the same time, then shuffle away with small steps</li>
+                  <li>Keep others at least 35 feet away from the line</li>
+                </ul>
+              </div>
+
+              <p className="text-sm text-muted-foreground italic text-center">
+                Stay safe this winter! Report outages or downed lines to us 24/7.
+              </p>
             </div>
           </ScrollArea>
         </DialogContent>
