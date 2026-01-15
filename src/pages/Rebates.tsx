@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Check } from "lucide-react";
+import { Check, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const rebates = [
   {
@@ -95,6 +96,14 @@ const Rebates = () => {
                   </li>
                 ))}
               </ul>
+              <div className="mt-6 pt-6 border-t border-border">
+                <Button asChild className="w-full sm:w-auto">
+                  <a href="/rebateform.pdf" download>
+                    <Download className="w-4 h-4 mr-2" />
+                    Download Rebate Application Form
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
