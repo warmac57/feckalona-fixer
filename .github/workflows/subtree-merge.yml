@@ -20,8 +20,8 @@ jobs:
 
       - name: Add feckalona-fixer as subtree
         run: |
-          # Add the remote
-          git remote add fixer-origin https://github.com/${{ github.repository_owner }}/feckalona-fixer.git
+          # Add the remote with PAT authentication
+          git remote add fixer-origin https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ github.repository_owner }}/feckalona-fixer.git
           
           # Fetch the repository
           git fetch fixer-origin
