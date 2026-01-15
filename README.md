@@ -59,6 +59,19 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+  
+## update subtree repository FECKalona
+ Changes made:
+  - Changed subtree add → subtree pull
+  - Fixed prefix from website → feckalona-fixer
+  - Added a commit message for the merge
+
+  How to use it:
+  1. Make changes to feckalona-fixer and push them
+  2. Go to FECKalona repo on GitHub → Actions → "Subtree Merge feckalona-fixer"
+  3. Click "Run workflow" to pull the latest changes
+
+  The workflow will automatically pull updates from feckalona-fixer into the subtree and push them to FECKalona.
 
 ## How can I deploy this project?
 
