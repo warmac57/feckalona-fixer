@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Sun, Wind, Leaf, TrendingUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const GreenPower = () => {
   return (
@@ -82,12 +83,12 @@ const GreenPower = () => {
                   Stay updated on the progress of our latest solar farm expansion project,
                   bringing even more clean energy to our community.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  to="/solar-farm-expansion"
                   className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Learn More About the Expansion
-                </a>
+                </Link>
               </div>
             </div>
           </div>
