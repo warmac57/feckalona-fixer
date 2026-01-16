@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Sun, Calendar, MapPin, Zap, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-solar-farm.jpg";
+import heroImage from "@/assets/hwy1-solar.jpg";
 
 const SolarFarmExpansion = () => {
   const milestones = [
