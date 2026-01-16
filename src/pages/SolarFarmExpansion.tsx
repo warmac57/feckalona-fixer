@@ -1,7 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Sun, MapPin, Zap, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { MapPin, Zap } from "lucide-react";
 import heroImage from "@/assets/hwy1-solar.jpg";
 
 const SolarFarmExpansion = () => {
@@ -70,25 +69,6 @@ const SolarFarmExpansion = () => {
                   one supporting Farmers Hen House, showcasing their leadership in local renewable energy 
                   generation for their members.
                 </p>
-              </div>
-
-              {/* CTA */}
-              <div className="section-card bg-primary/5 text-center">
-                <Sun className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h2 className="font-display text-2xl font-semibold text-foreground mb-3">
-                  Interested in Subscribing?
-                </h2>
-                <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-                  Reserve your solar energy blocks today and start saving on your electric bill 
-                  while supporting clean energy in our community.
-                </p>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
-                >
-                  Contact Us to Learn More
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
               </div>
             </div>
           </div>
