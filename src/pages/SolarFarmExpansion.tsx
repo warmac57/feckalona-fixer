@@ -70,7 +70,7 @@ const SolarFarmExpansion = () => {
                   {
                     icon: MapPin,
                     label: "Location",
-                    value: "South of Kalona",
+                    value: "North of Kalona, HWY 1",
                   },
                 ].map((stat) => (
                   <div
@@ -96,9 +96,9 @@ const SolarFarmExpansion = () => {
                   to our grid.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Located on 15 acres south of Kalona, the expansion will feature state-of-the-art 
-                  bifacial solar panels that capture sunlight from both sides, maximizing energy 
-                  production throughout the day. The project represents a $3.5 million investment 
+                  Located on 15 acres north of Kalona along State Highway 1, the expansion will feature 
+                  state-of-the-art bifacial solar panels that capture sunlight from both sides, maximizing 
+                  energy production throughout the day. The project represents a $3.5 million investment 
                   in our community's sustainable energy future.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
