@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Sun, Calendar, MapPin, Users, Zap, ArrowRight } from "lucide-react";
+import { Sun, Calendar, MapPin, Zap, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-solar-farm.jpg";
 
@@ -60,17 +60,12 @@ const SolarFarmExpansion = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
                 {[
                   {
                     icon: Zap,
                     label: "Additional Capacity",
-                    value: "2.5 MW",
-                  },
-                  {
-                    icon: Users,
-                    label: "Homes Powered",
-                    value: "500+",
+                    value: "1 MW",
                   },
                   {
                     icon: MapPin,
@@ -97,8 +92,8 @@ const SolarFarmExpansion = () => {
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Farmers Electric Cooperative is excited to announce the expansion of our community 
-                  solar farm. This project will add 2.5 megawatts of clean, renewable energy capacity 
-                  to our grid—enough to power over 500 additional homes in our service territory.
+                  solar farm. This project will add 1 megawatt of clean, renewable energy capacity 
+                  to our grid.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Located on 15 acres south of Kalona, the expansion will feature state-of-the-art 
