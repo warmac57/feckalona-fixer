@@ -9,6 +9,7 @@ import WaysToSave from "./pages/WaysToSave";
 import Rebates from "./pages/Rebates";
 import Grants from "./pages/Grants";
 import GreenPower from "./pages/GreenPower";
+import SolarFarmExpansion from "./pages/SolarFarmExpansion";
 import CustomerGeneration from "./pages/CustomerGeneration";
 import SafetyOutages from "./pages/SafetyOutages";
 import Services from "./pages/Services";
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/rebates" element={<Rebates />} />
           <Route path="/grants" element={<Grants />} />
           <Route path="/green-power" element={<GreenPower />} />
+          <Route path="/solar-farm-expansion" element={<SolarFarmExpansion />} />
           <Route path="/customer-generation" element={<CustomerGeneration />} />
           <Route path="/safety-outages" element={<SafetyOutages />} />
           <Route path="/services" element={<Services />} />
